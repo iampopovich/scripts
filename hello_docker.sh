@@ -8,6 +8,22 @@ sudo apt purge firefox* -y
 sudo apt purge thunderbird* -y
 sudo apt purge transmission-* -y
 sudo apt purge gnome-software* -y
+unity-scope-firefoxbookmarks
+unity-scope-tomboy -y
+unity-scope-gdrive -y
+unity-scope-video-remote -y
+unity-scope-home -y
+unity-scope-virtualbox -y
+unity-scope-manpages -y
+unity-scope-yelp -y
+unity-scope-openclipart -y
+unity-scope-zotero -y
+unity-scope-texdoc -y
+unity-scope-calculator -y
+unity-scope-chromiumbookmarks -y
+unity-scope-colourlovers -y
+unity-scope-devhelp -y
+
 sudo apt autoremove
 sudo apt autoclean
 
