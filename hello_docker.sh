@@ -8,7 +8,7 @@ sudo apt purge firefox* -y
 sudo apt purge thunderbird* -y
 sudo apt purge transmission-* -y
 sudo apt purge gnome-software* -y
-sudo apt purge unity-scope-firefoxbookmarks
+sudo apt purge unity-scope-firefoxbookmarks -y
 sudo apt purge unity-scope-tomboy -y
 sudo apt purge unity-scope-gdrive -y
 sudo apt purge unity-scope-video-remote -y
