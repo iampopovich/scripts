@@ -3,26 +3,31 @@
 sudo apt purge libreoffice-* -y
 sudo apt purge gnome-sudok* -y
 sudo apt purge gnome-mines* -y
+sudo apt purge gnome-mahjong* -y
 sudo apt purge aisler* -y
 sudo apt purge firefox* -y
 sudo apt purge thunderbird* -y
 sudo apt purge transmission-* -y
 sudo apt purge gnome-software* -y
-sudo apt purge unity-scope-firefoxbookmarks -y
-sudo apt purge unity-scope-tomboy -y
-sudo apt purge unity-scope-gdrive -y
-sudo apt purge unity-scope-video-remote -y
-sudo apt purge unity-scope-home -y
-sudo apt purge unity-scope-virtualbox -y
-sudo apt purge unity-scope-manpages -y
-sudo apt purge unity-scope-yelp -y
-sudo apt purge unity-scope-openclipart -y
-sudo apt purge unity-scope-zotero -y
-sudo apt purge unity-scope-texdoc -y
-sudo apt purge unity-scope-calculator -y
-sudo apt purge unity-scope-chromiumbookmarks -y
-sudo apt purge unity-scope-colourlovers -y
-sudo apt purge unity-scope-devhelp -y
+sudo apt purge shotwell* -y
+sudo apt purge onboard* -y
+sudo apt purge xterm* -y
+
+#sudo apt purge unity-scope-firefoxbookmarks -y
+#sudo apt purge unity-scope-tomboy -y
+#sudo apt purge unity-scope-gdrive -y
+#sudo apt purge unity-scope-video-remote -y
+#sudo apt purge unity-scope-home -y
+#sudo apt purge unity-scope-virtualbox -y
+#sudo apt purge unity-scope-manpages -y
+#sudo apt purge unity-scope-yelp -y
+#sudo apt purge unity-scope-openclipart -y
+#sudo apt purge unity-scope-zotero -y
+#sudo apt purge unity-scope-texdoc -y
+#sudo apt purge unity-scope-calculator -y
+#sudo apt purge unity-scope-chromiumbookmarks -y
+#sudo apt purge unity-scope-colourlovers -y
+#sudo apt purge unity-scope-devhelp -y
 
 sudo apt autoremove
 sudo apt autoclean
