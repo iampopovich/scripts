@@ -45,6 +45,7 @@ sudo bash nodesource_setup.sh
 #stage: repository installation
 sudo apt update 
 sudo apt upgrade -y
+sudo apt install ffmpeg -y
 sudo apt install mc -y
 sudo apt install chromium-browser -y
 sudo apt install git -y
