@@ -54,4 +54,4 @@ sudo apt install nodejs -y
 sudo apt install sublime-text -y
 sudo apt install sublime-merge -y
 sudo apt install python3-pip
-sudo pip3 install --upgrade 
+sudo pip3 install --upgrade pip
