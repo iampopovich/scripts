@@ -53,5 +53,8 @@ sudo apt install screenfetch -y
 sudo apt install nodejs -y
 sudo apt install sublime-text -y
 sudo apt install sublime-merge -y
+
+#stage: python3 installation
 sudo apt install python3-pip
 sudo pip3 install --upgrade pip
+sudo apt install python3-venv
