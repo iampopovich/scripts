@@ -12,6 +12,7 @@ sudo apt purge gnome-software* -y
 sudo apt purge shotwell* -y
 sudo apt purge onboard* -y
 sudo apt purge xterm* -y
+sudo apt purge gedit -y
 
 #sudo apt purge unity-scope-firefoxbookmarks -y
 #sudo apt purge unity-scope-tomboy -y
@@ -42,6 +43,10 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 
+#stage: dbeaveristallaion
+wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+
 #stage: repository installation
 sudo apt update 
 sudo apt upgrade -y
@@ -53,6 +58,11 @@ sudo apt install screenfetch -y
 sudo apt install nodejs -y
 sudo apt install sublime-text -y
 sudo apt install sublime-merge -y
+sudo apt install freerdp-x11 -y
+sudo apt instal dbeaver-ce -y
+sudo apt install p7zip -y
+sudo apt install unrar -y
+sudo apt install lmms -y
 
 #stage: python3 installation
 sudo apt install python3-pip
