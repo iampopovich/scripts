@@ -42,6 +42,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 #stage: nodejs installation
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
+rm nodesource_setup.sh
 
 #stage: dbeaveristallaion
 wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
