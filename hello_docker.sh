@@ -54,7 +54,7 @@ sudo apt upgrade -y
 sudo apt install ffmpeg -y
 sudo apt install mc -y
 sudo apt install chromium-browser -y
-sudo apt install git -y
+
 sudo apt install screenfetch -y
 sudo apt install nodejs -y
 sudo apt install sublime-text -y
@@ -64,6 +64,11 @@ sudo apt instal dbeaver-ce -y
 sudo apt install p7zip -y
 sudo apt install unrar -y
 sudo apt install lmms -y
+
+#stage: git installation
+sudo apt install git -y
+git config --global user.name Alex
+git config --global user.email iampopovich@gmail.com
 
 #stage: python3 installation
 sudo apt install python3-pip
