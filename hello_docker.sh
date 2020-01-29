@@ -74,3 +74,6 @@ git config --global user.email iampopovich@gmail.com
 sudo apt install python3-pip
 sudo pip3 install --upgrade pip
 sudo apt install python3-venv
+
+#update for 18.04 lts nevermind
+gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
