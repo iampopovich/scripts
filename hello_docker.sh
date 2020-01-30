@@ -14,6 +14,7 @@ sudo apt purge onboard* -y
 sudo apt purge xterm* -y
 sudo apt purge gedit -y
 sudo apt purge -y gnome-todo
+sudo apt purge -y remmina*
 
 
 #sudo apt purge unity-scope-firefoxbookmarks -y
