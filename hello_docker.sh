@@ -55,8 +55,9 @@ echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list
 sudo apt update 
 sudo apt upgrade -y
 sudo apt install ffmpeg -y
-sudo apt install mc -y
+#sudo apt install mc -y
 sudo apt install chromium-browser -y
+sudo apt install -y lm-sensors
 
 sudo apt install screenfetch -y
 sudo apt install nodejs -y
