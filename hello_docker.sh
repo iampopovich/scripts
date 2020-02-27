@@ -50,6 +50,8 @@ rm nodesource_setup.sh
 #stage: dbeaveristallaion
 wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+sudo apt update
+sudo apt install -y dbeaver-ce
 
 #stage: repository installation
 sudo apt update 
@@ -67,7 +69,7 @@ sudo apt install freerdp-x11 -y
 sudo apt instal dbeaver-ce -y
 sudo apt install p7zip -y
 sudo apt install unrar -y
-sudo apt install lmms -y
+#sudo apt install lmms -y
 
 #stage: git installation
 sudo apt install git -y
