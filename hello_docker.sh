@@ -15,6 +15,7 @@ sudo apt purge xterm* -y
 sudo apt purge gedit -y
 sudo apt purge -y gnome-todo
 sudo apt purge -y remmina*
+sudo snap remove -y gnome-characters
 
 
 #sudo apt purge unity-scope-firefoxbookmarks -y
@@ -41,13 +42,18 @@ sudo apt install curl -y
 #stage: sublime installation
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+sudo apt install sublime-text -y
+sudo apt install sublime-merge -y
 
 #stage: nodejs installation
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 rm nodesource_setup.sh
+sudo apt update
+sudo apt install nodejs -y
 
-#stage: dbeaveristallaion
+#stage: dbeaver installaion
 wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 sudo apt update
@@ -60,23 +66,20 @@ sudo apt install ffmpeg -y
 #sudo apt install mc -y
 sudo apt install chromium-browser -y
 sudo apt install -y lm-sensors
-
 sudo apt install screenfetch -y
-sudo apt install nodejs -y
-sudo apt install sublime-text -y
-sudo apt install sublime-merge -y
 sudo apt install freerdp-x11 -y
-sudo apt instal dbeaver-ce -y
 sudo apt install p7zip -y
 sudo apt install unrar -y
 #sudo apt install lmms -y
 
 #stage: git installation
+sudo apt update
 sudo apt install git -y
 git config --global user.name Alex
 git config --global user.email iampopovich@gmail.com
 
 #stage: python3 installation
+sudo apt update
 sudo apt install python3-pip
 sudo pip3 install --upgrade pip
 sudo apt install python3-venv
