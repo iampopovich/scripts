@@ -72,6 +72,10 @@ sudo apt install p7zip -y
 sudo apt install unrar -y
 #sudo apt install lmms -y
 
+#stage: tlp installation
+sudo apt install tlp tlp-rdw -y
+sudo sed -i 's/#DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"/DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"/g' /etc/default/tlp
+
 #stage: git installation
 sudo apt update
 sudo apt install git -y
