@@ -82,6 +82,9 @@ sudo apt install git -y
 git config --global user.name Alex
 git config --global user.email iampopovich@gmail.com
 
+#stage: openvpn installation
+sudo apt install network-manager-openvpn-gnome -y
+
 #stage: python3 installation
 sudo apt update
 sudo apt install python3-pip
