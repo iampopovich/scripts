@@ -82,9 +82,6 @@ sudo apt install git -y
 git config --global user.name Alex
 git config --global user.email iampopovich@gmail.com
 
-#stage: openvpn installation
-sudo apt install network-manager-openvpn-gnome -y
-
 #stage: python3 installation
 sudo apt update
 sudo apt install python3-pip
@@ -93,3 +90,7 @@ sudo apt install python3-venv
 
 #update for 18.04 lts nevermind
 gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
+
+#stage: openvpn installation
+sudo apt install network-manager-openvpn-gnome -y
+sudo nmcli connection import type openvpn file #lpopen.ovpn
