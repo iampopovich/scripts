@@ -1,4 +1,5 @@
 #hope so you use appcleaner
+#also check this https://nektony.com/how-to/uninstall-virtualbox-on-mac
 brew update
 brew cleanup
 #################################
