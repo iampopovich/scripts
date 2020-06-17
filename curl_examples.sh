@@ -24,3 +24,5 @@ curl https://www.google.com -v
 #* TLSv1.2 (IN), TLS handshake, Server hello (2):
 #* TLSv1.2 (IN), TLS handshake, Certificate (11):
 #* TLSv1.2 (IN), TLS ...
+# -C restart downloading from the where it was interrupted (network, shutdown , etc)
+curl -C - -O https://speedtest.selectel.ru/10MB #100/1GB/10GB
