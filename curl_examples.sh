@@ -42,6 +42,14 @@ curl -X POST "https://petstore.swagger.io/v2/pet" \
 curl -X GET "https://petstore.swagger.io/v2/pet/100" -H "accept: application/json"
 #causes error if no item with id = 100500 - check status code
 curl -X GET "https://petstore.swagger.io/v2/pet/100500" -H "accept: application/json"
-
-
+#create order
+curl -X POST "https://petstore.swagger.io/v2/store/order" \
+-H "accept: application/json" \
+-H "Content-Type: application/json" \
+-d "{ \"id\": 0, \"petId\": 0, \"quantity\": 0, \"shipDate\": \"2020-06-18T19:20:47.565Z\", \"status\": \"placed\", \"complete\": true}"
+#return an error code cause of bad json format
+curl -X POST "https://petstore.swagger.io/v2/store/order" \
+-H "accept: application/json" \
+-H "Content-Type: application/json" \
+-d "{ \"id\": 0, \"petId\": 0, \"quantity\": 0, \"shipDate\": \"2020-06-18T19:20:47.565Z\", \"status\": \"placed\", \"complete\": true"
 
