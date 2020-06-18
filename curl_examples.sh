@@ -26,3 +26,22 @@ curl https://www.google.com -v
 #* TLSv1.2 (IN), TLS ...
 # -C restart downloading from the where it was interrupted (network, shutdown , etc)
 curl -C - -O https://speedtest.selectel.ru/10MB #100/1GB/10GB
+# request examples
+curl --request GET https://www.google.com/
+curl --request POST https://www.google.com/
+curl --request PUT https://www.google.com/
+curl --request DELETE https://www.google.com/
+curl -X GET https://www.google.com/
+#API testing examples https://petstore.swagger.io/
+#create pet with id 100
+curl -X POST "https://petstore.swagger.io/v2/pet" \
+-H "accept: application/json" \
+-H "Content-Type: application/json" \
+-d "{ \"id\": 100, \"category\": { \"id\": 0, \"name\": \"string\" }, \"name\": \"doggie\", \"photoUrls\": [ \"string\" ], \"tags\": [ { \"id\": 0, \"name\": \"string\" } ], \"status\": \"available\"}"
+#find pet with id 100
+curl -X GET "https://petstore.swagger.io/v2/pet/100" -H "accept: application/json"
+#causes error if no item with id = 100500 - check status code
+curl -X GET "https://petstore.swagger.io/v2/pet/100500" -H "accept: application/json"
+
+
+
