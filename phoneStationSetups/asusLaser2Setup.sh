@@ -49,4 +49,5 @@ adb shell pm uninstall --user 0 com.asus.splendidcommandagent
 # adb shell pm uninstall --user 0 
 # adb shell pm uninstall --user 0 
 # adb shell pm uninstall --user 0 
-# adb shell pm uninstall --user 0 
+# adb shell pm uninstall --user 0
+#installation section
