@@ -25,4 +25,15 @@ var2=$(( $var1 * 2 ))
 echo $var2
 var3=$(( 12 * 12 ))
 echo $var3
+echo "here's conditional executing"
+if pwd
+then
+	echo `pwd`
+fi
+echo "here's user searching"
+user=_ondemand
+if grep $user /etc/passwd
+then
+echo "The user $user Exists"
+fi
 
