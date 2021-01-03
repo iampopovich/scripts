@@ -25,7 +25,7 @@ var2=$(( $var1 * 2 ))
 echo $var2
 var3=$(( 12 * 12 ))
 echo $var3
-echo "here's conditional executing"
+echo "here's conditional executing if-then"
 if pwd
 then
 	echo `pwd`
@@ -36,4 +36,16 @@ if grep $user /etc/passwd
 then
 echo "The user $user Exists"
 fi
-
+echo "here's conditional executing if-then-else"
+if pwd
+then
+	echo `pwd`
+fi
+echo "here's user searching"
+user=_ondemand123
+if grep $user /etc/passwd
+then
+echo "The user $user Exists"
+else
+echo "The user $user doesn't Exist"
+fi
