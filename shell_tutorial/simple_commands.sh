@@ -12,5 +12,17 @@ echo ""
 grade=10
 person="Pepe"
 echo "$person is a good boy, he is in grade $grade"
-
+echo "here i use \`command\` and \$(command) "
+echo `uptime`
+echo $(uptime)
+echo ""
+mydir=$(pwd)
+echo $mydir
+echo "let's try some math"
+var1=$(( 5 + 5 ))
+echo $var1
+var2=$(( $var1 * 2 ))
+echo $var2
+var3=$(( 12 * 12 ))
+echo $var3
 
