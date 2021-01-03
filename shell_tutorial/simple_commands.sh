@@ -74,4 +74,12 @@ echo $(($val1 <= $val2))
 echo $(($val1 < $val2))
 echo $(($val1 != $val2))
 
+echo "here's string comparing"
+str1=hehehe
+str2=olololol
+echo $(($str1 = $str2)) #Проверяет строки на равенство, возвращает истину, если строки идентичны.
+echo $(($str1 != $str2)) #Возвращает истину, если строки не идентичны.
+echo $(($str1 < $str2)) #Возвращает истину, если str1меньше, чем str2.
+echo $(($str1 > $str2)) #Возвращает истину, если str1больше, чем str2.
+
 
