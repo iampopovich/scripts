@@ -58,3 +58,20 @@ elif ls /home
 then
 echo "The user doesn’t exist but anyway there is a directory under /home"
 fi
+echo "here's number comparision operators"
+val1=100
+val2=150
+if [$val1 -ge $val2]
+then
+	echo "$val1 great or equal $val2"
+else
+	echo "$val1 not great or equal $val2"
+fi
+
+echo $(($val1 >= $val2))
+echo $(($val1 > $val2))
+echo $(($val1 <= $val2))
+echo $(($val1 < $val2))
+echo $(($val1 != $val2))
+
+
